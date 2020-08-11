@@ -33,6 +33,7 @@
 n = int(input())
 li = list(map(int, input().split()))
 
+
 def sosu(num):
     if num == 1:
         return 0
@@ -43,6 +44,7 @@ def sosu(num):
         if num % i == 0:
             return 0
     return 1
+
 
 count = 0
 

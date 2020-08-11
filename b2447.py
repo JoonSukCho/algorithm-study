@@ -1,14 +1,6 @@
 
 
+a = [i for i in range(0, 11)]
 
 
-def printStar(n):
-    print("*" * n)
-    print("*" + " " + "*")
-    print("*" * n)
-
-
-
-n = int(input())
-
-printStar(n)
+print(a)

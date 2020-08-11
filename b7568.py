@@ -1,31 +1,27 @@
 
-xlist = []
-ylist = []
-rank = []
-n = int(input())
+import sys
+
+n = int(sys.stdin.readline().strip())
+
+w = []
+h = []
+rank_list = []
 
 for i in range(n):
-    x, y = map(int, input().split())
-    xlist.append(x)
-    ylist.append(y)
+    x, y = map(int, sys.stdin.readline().split())
+    w.append(x)
+    h.append(y)
 
-count = 1
-for i in range(n):
-    count = 1
-    for j in range(n):
+
+for i in range(len(w)):
+    k = 1
+    for j in range(len(w)):
         if i == j:
             pass
 
-        elif xlist[i] <= xlist[j] and ylist[i] <= ylist[j]:
-            count += 1
-    rank.append(count)
+        if w[i] < w[j] and h[i] < h[j]:
+            k += 1
 
-print(rank)
+    rank_list.append(k)
 
-
-# 0 1
-# 0 2
-# 1 0
-# 1 2
-# 2 0
-# 2 1
+print(' '.join(map(str, rank_list)))

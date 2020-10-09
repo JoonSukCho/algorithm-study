@@ -7,7 +7,7 @@ def divSum(num):
 
     for i in range(len(num)):
         total = total + int(num[i])
-    
+
     total = total + int(num)
 
     return total
@@ -25,8 +25,5 @@ while 1:
     if divSum(i) > n:
         print(0)
         break
-    
-    i = i + 1
 
-    
- 
+    i = i + 1

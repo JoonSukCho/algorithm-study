@@ -1,6 +1,6 @@
 
 
-a = [i for i in range(0, 11)]
+n = int(input())
+stars = ['*' * n for i in range(n)]
 
-
-print(a)
+print(stars)

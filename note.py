@@ -1,11 +1,10 @@
-from dateutil.parser import parse
 
 
-date1 = parse('20200201')
-date2 = parse('20200301')
+def sum(n):
+    if n == 0:
+        return 0
+
+    return n + sum(n - 1)
 
 
-if date1 < date2:
-    print("true")
-else:
-    print("false")
+print(sum(4))
